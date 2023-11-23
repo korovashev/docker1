@@ -1,0 +1,28 @@
+<h1>
+  sudo apt update
+  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+  apt-cache policy docker-ce
+  sudo apt install docker-ce
+  sudo systemctl status docker
+  docker ps
+  sudo docker ps
+  sudo docker run hello-world
+  sudo docker ps
+  sudo docker images (to, chto uzhe zapuskali we)
+  sudo docker search ubuntu
+  sudo docker pull ubuntu
+  sudo docker images
+  sudo docker run -it ubuntu (zapusk terminal ubuntu)
+    pwd
+    whoami
+    ls -alt
+    exit
+  sudo docker ps
+  sudo docker run -d ubuntu (pognal workat', but ne vidno in ps)
+  sudo docker ps
+  sudo docker run -dit ubuntu (pognal workat' and ego vidno)
+  sudo docker ps (kakie zapusheny containers)
+  sudo docker exec -it (name) /bin/bash
+</h1>
